@@ -65,6 +65,7 @@ table {
 }
 .video-container{
   height: 100%;
+  z-index: 99;
 }
 .box{
   width: 100%;
