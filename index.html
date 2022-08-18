@@ -22,7 +22,6 @@
   <div id="app">
 
     <div id="main">
-      <button id="btn-play" type="button">オンにする</button>
       <div class="video-container">
         <video src="videos/topOzawa.mp4" type="video/mp4" id="topOzawa" muted playsinline autoplay loop></video>
       </div>
@@ -65,19 +64,6 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script>
-    const bgm1 = document.querySelector("#bgm1"); // <audio>
-    const btn = document.querySelector("#btn-play"); // <button>
-
-    btn.addEventListener("click", () => {
-      // pausedがtrue=>停止, false=>再生中
-      if (!bgm1.paused) {
-        btn.innerHTML = '<i class="fas fa-play"></i>'; // 「再生ボタン」に切り替え
-        bgm1.pause();
-      } else {
-        btn.innerHTML = '<i class="fas fa-pause"></i>'; // 「一時停止ボタン」に切り替え
-        bgm1.play();
-      }
-    });
     const vm = new Vue({
       el: '#app',
       vuetify: new Vuetify(),
