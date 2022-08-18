@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <audio src="bgm/n74.mp3" autoplay loop>
+        あなたのブラウザーは <code>audio</code>要素をサポートしていません。
+    </audio>
+</head>
+
+<body>
+    <div id="main">
+        <div class="video-container">
+            <video src="videos/lose_ozawa.mp4" id="topOzawa" autoplay loop></video>
+        </div>
+        <div class="intro-container">
+            <p class="introduction">
+                ざんねん！<br />
+                すごいおしいかも！<br />
+                なんどでもちゃれんじできるから<br />
+                せいかいするまで<br />
+                がんばってみよう！
+            </p>
+            <div id="app">
+                <div class="button017">
+                    <a href="index.html">リベンジする</a>
+                </div>
+            </div>
+            <p class="introduction">
+                <br /><br />
+                ................<br /><br /><br /><br /><br /><br />
+                という訳で<br />
+                何度やっても当たらないそこの君へ<br /><br />
+                勝負に負けたことは<br />
+                正直に伝えましょう。<br />
+                以下<br />
+                小沢がいま欲しいものらしいです。<br />
+                ちなみに8月18日は<br />
+                小沢の誕生日らしいです。
+            </p>
+            <div id="app">
+                <!-- 質問 -->
+                <div class="problem">
+                    <h1></h1>
+                    <p class="wantStuff">
+                        Apple Watch<br />
+                        秋服<br />
+                        恋<br />
+                        愛<br />
+                        甘い食べ物<br />
+                        お金
+                    </p>
+                </div>
+                <div class="button017">
+                    <a id="kyouyuu" href="https://www.instagram.com/shoza08">小沢になにかあげる
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>©日本小沢負愛護協会</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+        });
+    </script>
+</body>
+
+</html>

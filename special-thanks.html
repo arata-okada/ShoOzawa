@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <audio src="bgm/BGM184-161031-hakkiriotome-mp3.mp3" autoplay loop>
+        あなたのブラウザーは <code>audio</code>要素をサポートしていません。
+    </audio>
+</head>
+
+<body>
+    <div id="main">
+        <div class="video-container">
+            <video src="videos/winOzawa.mp4" id="topOzawa" autoplay loop></video>
+        </div>
+        <div class="intro-container">
+            <p class="introduction">
+                おざわはまけました。<br />
+                とてもくやしいです!!!<br />
+                それにしても<br />
+                おみごと!!!<br />
+                ほんとうにすごい!!!<br />
+                きみはよくおざわのことを<br />
+                しっているんだね!<br />
+                それもまたいっきょうだ!!!<br /><br /><br /><br /><br /><br />
+                ................<br /><br /><br /><br /><br /><br />
+                負けてしまったので<br />
+                小沢から<br />
+                世界でたった１つ<br />
+                オリジナルボイス<br />
+                スペシャル音声メッセージ<br />
+                をプレゼント!!!
+            </p>
+            <div id="originalVideo">
+                <video src="videos/winOzawa.mp4" id="topOzawa" controls></video>
+            </div>
+            <div id="app">
+                <div class="button017">
+                    <a id="kyouyuu" href="https://www.instagram.com/shoza08">小沢につたえる</a>
+                </div>
+            </div>
+            <p class="introduction">
+                以上で終了です!<br />
+                お付き合いいただき<br />
+                ありがとうございました!
+            </p>
+
+            <div class="footer">
+                <p>©日本小沢負愛護協会</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+        });
+    </script>
+</body>
+
+</html>
