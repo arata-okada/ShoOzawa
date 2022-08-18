@@ -55,7 +55,7 @@ table {
     max-width: 600px;
     overflow: hidden;
   }
-#app{
+.app-container{
   background-color: #008037;
   font-family: 'Yomogi', cursive;
   display: flex;
@@ -174,3 +174,5 @@ table {
 #originalVideo video{
   max-width: 80%;
 }
+
+.last

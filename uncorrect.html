@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <audio src="bgm/n74.mp3" autoplay loop>
+    <audio src="bgm/n74.mp3" preload loop>
         あなたのブラウザーは <code>audio</code>要素をサポートしていません。
     </audio>
 </head>
@@ -30,7 +30,7 @@
                 せいかいするまで<br />
                 がんばってみよう！
             </p>
-            <div id="app">
+            <div class="app-container">
                 <div class="button017">
                     <a href="index.html">リベンジする</a>
                 </div>
@@ -47,7 +47,7 @@
                 ちなみに8月18日は<br />
                 小沢の誕生日らしいです。
             </p>
-            <div id="app">
+            <div class="app-container">
                 <!-- 質問 -->
                 <div class="problem">
                     <h1></h1>
@@ -72,12 +72,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-    <script>
-        const vm = new Vue({
-            el: '#app',
-            vuetify: new Vuetify(),
-        });
-    </script>
 </body>
 
 </html>
