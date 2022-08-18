@@ -76,9 +76,7 @@
       methods: {
         answer() {
           if (this.content !== "それもまた一興") {
-            setTimeout(function () {
-              window.location = "uncorrect.html"
-            }, 2000);
+            window.location = "uncorrect.html"
           } else {
             setTimeout(function () {
               window.location = "special-thanks.html"
