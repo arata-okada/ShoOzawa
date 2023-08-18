@@ -166,7 +166,7 @@ table {
 .footer{
   text-align: center;
   font-size: 12px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   margin-top: 50px;
   padding-bottom: 20px;
 }
